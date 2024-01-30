@@ -1,0 +1,58 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem02.exe...done.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem02.exe
+[New Thread 16060.0x2fc0]
+[New Thread 16060.0x431c]
+[New Thread 16060.0x61a4]
+[New Thread 16060.0x45f4]
+Enter first number:1
+Enter first number:1
+sum of 1 and 1 is 2[Inferior 1 (process 16060) exited normally]
+(gdb) b 17
+Breakpoint 1 at 0x4014e0: file C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem02.c, line 17.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem02.exe
+[New Thread 28132.0x6c70]
+[New Thread 28132.0x6094]
+[New Thread 28132.0x6090]
+[New Thread 28132.0x5c4c]
+Enter first number:1
+Enter first number:1
+sum of 1 and 1 is 2
+Breakpoint 1, main () at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem02.c:18
+warning: Source file is more recent than executable.
+18      }
+(gdb) n
+(gdb) b 16
+Breakpoint 2 at 0x4014bc: file C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem02.c, line 16.
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem02.exe
+[New Thread 18900.0x55b8]
+[New Thread 18900.0x7a94]
+[New Thread 18900.0x7bac]
+[New Thread 18900.0x6dcc]
+Enter first number:1
+Enter first number:1
+
+Breakpoint 2, main () at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem02.c:16
+16          printf("sum of %d and %d is %d \n", a, b, sum);
+(gdb) n
+sum of 1 and 1 is 2
+Breakpoint 1, main () at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem02.c:18
+18      
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 18900] will be killed.
