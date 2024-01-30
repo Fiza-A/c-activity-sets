@@ -1,1 +1,2 @@
-if b main is to create breakpoint at main function then how do i create breakpoint at other places like at the printf line?
+1:if b main is to create breakpoint at main function then how do i create breakpoint at other places like at the printf line?
+2:what does -O0do in the line gcc -g -O0 problemx.c?
