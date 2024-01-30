@@ -25,7 +25,7 @@ int compare(int a, int b, int c){
     return large;
 }
 void output(int a, int b, int c, int large){
-    printf("largest number is %d",large);
+    printf("largest number is %d\n",large);
 }
 int main(){
     int a, b, c;
