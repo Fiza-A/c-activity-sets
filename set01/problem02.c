@@ -13,7 +13,7 @@ int main(){
     int sum;
     sum=a+b;
 
-    printf("sum of %d and %d is %d \n", a, b, sum);
+    printf("sum of %d and %d is %d\n", a, b, sum);
 
     return 0;
 }
