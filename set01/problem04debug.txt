@@ -1,0 +1,49 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem04.exe...done.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem04.exe 
+[New Thread 11740.0x74fc]
+[New Thread 11740.0xcd4]
+[New Thread 11740.0x544]
+[New Thread 11740.0x4e94]
+Enter two numbers:
+3
+3
+Sum of 3 and 3 is 6
+[Inferior 1 (process 11740) exited normally]
+(gdb) b 16
+Breakpoint 1 at 0x401492: file C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem04.c, line 16.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem04.exe 
+[New Thread 26792.0x6f60]
+[New Thread 26792.0x4d80]
+[New Thread 26792.0x2cbc]
+[New Thread 26792.0x747c]
+Enter two numbers:
+3
+3
+
+Breakpoint 1, add (a=3, b=3, sum=0x60ff14) at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem04.c:16
+16          *sum=0;
+(gdb) n
+17          *sum=a+b;
+(gdb) n
+18      
+(gdb) n
+main () at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem04.c:27
+27          output(a, b, sum);
+(gdb) n
+Sum of 3 and 3 is 6
+28          return 0;
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 26792] will be killed.
