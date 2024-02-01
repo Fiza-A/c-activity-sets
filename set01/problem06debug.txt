@@ -1,0 +1,53 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem06.exe...done.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem06.exe
+[New Thread 18156.0x396c]
+[New Thread 18156.0x490]
+[New Thread 18156.0x6a4c]
+[New Thread 18156.0x204c]
+Enter three numbers: 1
+2
+3
+The largest number among 1, 2, and 3 is: 3
+[Inferior 1 (process 18156) exited normally]
+(gdb) b 25
+Breakpoint 1 at 0x4014d9: file C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem06.c, line 25.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem06.exe 
+[New Thread 29220.0x508c]
+[New Thread 29220.0x5450]
+[New Thread 29220.0x528]
+[New Thread 29220.0x7104]
+Enter three numbers: 1
+2
+
+3
+
+Breakpoint 1, compare (a=1, b=2, c=3, largest=0x61ff10) at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem06.c:25
+25      }
+(gdb) n
+main () at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem06.c:33
+33          output(a, b, c, largest);
+(gdb) n
+The largest number among 1, 2, and 3 is: 3
+34          return 0;
+(gdb) n
+35      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 29220] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
