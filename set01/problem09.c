@@ -19,7 +19,7 @@ float find_sqrt(float n, float epsilon){
     return x_next;
 }
 void output(float n, float res){
-    printf("sqrt of %f is %f",n,res);
+    printf("sqrt of %.2f is %.2f \n",n,res);
 }
 int main(){
     float n, epsilon, res;
