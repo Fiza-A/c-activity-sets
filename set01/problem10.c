@@ -4,16 +4,13 @@ void input_str(char *string1, char *string2) {
     scanf("%s %s", string1, string2);
 }
 int strcmp(char *string1, char *string2) {
-    int strcmp(char *string1, char *string2);{
-    int i = 0;
-    while (string1[i] == string2[i]) {
-        if (string1[i] == '\0') {
-            return 0; 
+    int i;
+    for(i=0;string1[i]!='\0' && string2[i]!='\0';i++){
+        if(string1[i]!=string2[i]){
+            return string1[i]-string2[i];
         }
-        i++;
     }
     return string1[i] - string2[i];
-}
 }
 void output(char *string1, char *string2, int result) {
     if (result < 0) {
