@@ -1,0 +1,67 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem10.exe...done.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem10.exe 
+[New Thread 16980.0x7a28]
+[New Thread 16980.0x6fd4]
+[New Thread 16980.0x58a0]
+[New Thread 16980.0x6ed0]
+Enter the two strings: fiza Fiza
+fiza is greater than Fiza
+[Inferior 1 (process 16980) exited normally]
+(gdb) b 6
+Breakpoint 1 at 0x401495: file C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem10.c, line 6.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem10.exe
+[New Thread 15148.0x3e30]
+[New Thread 15148.0x4324]
+[New Thread 15148.0x1764]
+[New Thread 15148.0x8060]
+Enter the two strings: fiza
+fiza
+
+Breakpoint 1, strcmp (string1=0x61feb8 "fiza", string2=0x61fe54 "fiza")
+    at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem10.c:8
+warning: Source file is more recent than executable.
+8           for(i=0;string1[i]!='\0' && string2[i]!='\0';i++){
+(gdb) n
+9               if(string1[i]!=string2[i]){
+(gdb) n
+8           for(i=0;string1[i]!='\0' && string2[i]!='\0';i++){
+(gdb) n
+9               if(string1[i]!=string2[i]){
+(gdb) n
+8           for(i=0;string1[i]!='\0' && string2[i]!='\0';i++){
+(gdb) n
+9               if(string1[i]!=string2[i]){
+(gdb) n
+8           for(i=0;string1[i]!='\0' && string2[i]!='\0';i++){
+(gdb) n
+9               if(string1[i]!=string2[i]){
+(gdb)  
+8           for(i=0;string1[i]!='\0' && string2[i]!='\0';i++){
+(gdb) n
+13          return string1[i] - string2[i];
+(gdb) n
+14      }
+(gdb) n
+main () at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem10.c:29
+29          output(string1, string2, result);
+(gdb) n
+fiza is equal to fiza
+30          return 0;
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 15148] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
