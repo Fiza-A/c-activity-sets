@@ -16,7 +16,7 @@ void output(float base, float height, float area){
     if(height<0){
         printf("Please enter positive height!");
     }
-    printf("Area of the triangle with base %.2f and height %.2f is %.2f", base, height, area);
+    printf("Area of the triangle with base %.2f and height %.2f is %.2f\n", base, height, area);
 }
 int main(){
     float base, height, area;
