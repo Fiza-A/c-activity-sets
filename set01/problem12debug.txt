@@ -1,0 +1,70 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem12.exe...done.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem12.exe 
+[New Thread 22684.0x8360]
+[New Thread 22684.0x4318]
+[New Thread 22684.0x2a18]
+[New Thread 22684.0x8384]
+Enter the number of complex numbers (n): 2
+Enter 2 complex numbers:
+Enter the real part: 1 
+Enter the imaginary part: 2
+Enter the real part: 2
+Enter the imaginary part: 1
+Sum of 2 complex numbers:
+(1.00 + 2.00i) + (2.00 + 1.00i) = (3.00 + 3.00i)
+[Inferior 1 (process 22684) exited normally]
+(gdb) b 33
+Breakpoint 1 at 0x401553: file C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem12.c, line 33.
+(gdb) r
+Starting program: C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01/problem12.exe 
+[New Thread 13528.0x70b0]
+[New Thread 13528.0x2bcc]
+[New Thread 13528.0x246c]
+[New Thread 13528.0x681c]
+Enter the number of complex numbers (n): 2
+Enter 2 complex numbers:
+Enter the real part: 1
+Enter the imaginary part: 1
+Enter the real part: 1
+Enter the imaginary part: 1
+
+Breakpoint 1, add_n_complex (n=2, c=0x61fed0) at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem12.c:33
+33          Complex sum={0, 0};
+(gdb) n
+34          for (int i = 0; i < n; i++) {
+(gdb) n
+35              sum = add(sum, c[i]);
+(gdb) n
+34          for (int i = 0; i < n; i++) {
+(gdb) n
+35              sum = add(sum, c[i]);
+(gdb) n
+34          for (int i = 0; i < n; i++) {
+(gdb) n
+37          return sum;
+(gdb) n
+38      }
+(gdb) n
+main () at C:\Users\AMAN ARIF\Desktop\PSC\c-activity-sets\set01\problem12.c:57
+57          output(n, c, result);
+(gdb) n
+Sum of 2 complex numbers:
+(1.00 + 1.00i) + (1.00 + 1.00i) = (2.00 + 2.00i)
+58          return 0;
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 13528] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
