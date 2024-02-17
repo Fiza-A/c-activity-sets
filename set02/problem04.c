@@ -21,24 +21,19 @@ void input_array(int n, int a[n]){
         scanf("%d",&a[i]);
     }
 }
-int is_composite(int n, int a[n]){
-    for(int i=0;i<n;i++){
-        if(a[i]<=1){
-            return 0;
-        }
-        if(a[i]==2 || a[i]==3){
-            return -1;
-        }
-        for(int j = 2; j<=a[i]/2; j++){
-            if(a[i]%j==0){
-                return 1;
-            }
+int is_composite(int n, int a[]) {
+    if (a[n] <= 1){
+        return 0;
+    }  
+    for (int i = 2; i <= a[n]/ 2; i++) {
+        if (a[n]% i == 0) {
+            return 1; 
         }
     }
 }
 int sum_composite_numbers(int n, int a[]){
-    int sum=0;
     int res;
+    int sum=0;
     for(int i=0;i<n;i++){
         if(res==1){
             sum+=a[i];
