@@ -11,7 +11,7 @@ void input_string(char *a);
 void str_reverse(char *str, char *rev_str);
 void output(char *a, char *reverse_a);
 int main(){
-    char a, rev_str;
+    char a[100], rev_str[100];
     input_string(&a);
     str_reverse(a,&rev_str);
     output(a, rev_str);
@@ -20,4 +20,7 @@ int main(){
 void input_string(char *a){
     printf("Enter a string:\n");
     scanf("%s", a);
+}
+void str_reverse(char *str, char *rev_str){
+
 }
