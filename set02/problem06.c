@@ -33,5 +33,7 @@ void str_reverse(char *str, char *rev_str) {
 void output(char *a, char *reverse_a) {
     printf("\nGiven String: %s\nReversed String: %s\n", a, reverse_a);
 }
-
+int main(){
+    
+}
 
